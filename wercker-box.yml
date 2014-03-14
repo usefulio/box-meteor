@@ -1,5 +1,5 @@
 name: meteor
-version: 0.4.0
+version: 0.5.0
 type: main
 platform: ubuntu@12.04
 description: box for building testing and deploying meteor apps
@@ -54,6 +54,3 @@ script: |-
     # Install laika
   sudo npm install -g laika
   type laika || { echo "Laika not found after installation! Terminating..."; exit 1; }
-env:
-  NODE_VERSION: "0.10.11"
-  METEOR_VERSION: "0.6.4"
