@@ -24,7 +24,7 @@ script: |-
   echo 'verbose = true' | sudo tee -a /etc/mongodb.conf
   echo 'noprealloc = true' | sudo tee -a /etc/mongodb.conf
   echo 'smallfiles = true' | sudo tee -a /etc/mongodb.conf
-  /bin/sh install.sh
+  #  NO DONT INSTALL LOCAL METEOR!  /bin/sh install.sh
 
   # Create and own /data directory
   sudo mkdir -p /data/db/
