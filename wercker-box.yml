@@ -1,5 +1,5 @@
 name: meteor
-version: 0.5.0
+version: 0.5.1
 type: main
 platform: ubuntu@12.04
 description: box for building testing and deploying meteor apps
@@ -7,8 +7,6 @@ keywords:
   - meteor
   - javascript
   - nodejs
-#packages:
- # - meteor@0.6.4
 script: |
 script: |-
   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/10gen.list
@@ -54,3 +52,7 @@ script: |-
     # Install laika
   sudo npm install -g laika
   type laika || { echo "Laika not found after installation! Terminating..."; exit 1; }
+  
+  env:
+  NODE_VERSION: "0.10.5"
+  METEOR_VERSION: "latest"
